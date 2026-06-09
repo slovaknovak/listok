@@ -282,7 +282,7 @@
 
 <!-- TICKET SCREEN -->
 <div id="ticketScreen" style="display:none;position:fixed;inset:0;z-index:30;flex-direction:column;background:#fff;">
-  <div style="background:linear-gradient(180deg,#0885dc 0%,#0885dc 100%);padding:74px 20px 30px;text-align:center;position:relative;">
+  <div style="background:linear-gradient(180deg,#0885dc 0%,#0885dc 100%);padding:calc(env(safe-area-inset-top) + 54px) 20px 30px;text-align:center;position:relative;">
     <button onclick="closeTicketScreen()" style="position:absolute;left:16px;top:54px;background:none;border:none;cursor:pointer;">
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
         <circle cx="14" cy="14" r="12" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/>
