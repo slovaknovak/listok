@@ -445,11 +445,14 @@
     var overlay = document.getElementById("stationOverlay");
     var sheet = document.getElementById("stationSheet");
     overlay.style.display = "block";
-    sheet.style.display = "block";
-    setTimeout(function() {
-      overlay.style.background = "rgba(0,0,0,0.5)";
-      sheet.style.transform = "translateY(0)";
-    }, 10);
+    sheet.style.display = "flex";
+    sheet.style.flexDirection = "column";
+    requestAnimationFrame(function() {
+      requestAnimationFrame(function() {
+        overlay.style.background = "rgba(0,0,0,0.5)";
+        sheet.style.transform = "translateY(0)";
+      });
+    });
   }
   function closeStationPicker() {
     var overlay = document.getElementById("stationOverlay");
@@ -472,10 +475,10 @@
 
 <!-- STATION PICKER -->
 <div id="stationOverlay" onclick="closeStationPicker()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0);transition:background 0.36s;z-index:25;"></div>
-<div id="stationSheet" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;border-radius:22px 22px 0 0;z-index:26;box-shadow:0 -4px 30px rgba(0,0,0,0.16);transform:translateY(100%);transition:transform 0.38s cubic-bezier(0.32,0.72,0,1);padding-bottom:40px;">
-  <div style="display:flex;justify-content:center;padding:12px 0 4px;"><div style="width:38px;height:4px;background:#d1d1d6;border-radius:2px;"></div></div>
-  <div style="padding:10px 24px 0;text-align:center;">
-    <div style="font-size:17px;font-weight:700;color:#111;margin-bottom:16px;">Vyber stanicu</div>
+<div id="stationSheet" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;border-radius:22px 22px 0 0;z-index:26;box-shadow:0 -4px 30px rgba(0,0,0,0.16);transform:translateY(100%);transition:transform 0.38s cubic-bezier(0.32,0.72,0,1);height:70vh;flex-direction:column;">
+  <div style="display:flex;justify-content:center;padding:12px 0 4px;flex-shrink:0;"><div style="width:38px;height:4px;background:#d1d1d6;border-radius:2px;"></div></div>
+  <div style="font-size:17px;font-weight:700;color:#111;margin-bottom:8px;text-align:center;flex-shrink:0;padding:0 24px;">Vyber stanicu</div>
+  <div style="flex:1;overflow-y:scroll;-webkit-overflow-scrolling:touch;padding:0 24px 40px;">
     
       <div onclick="selectStation('Stn. Nové Mesto')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Stn. Nové Mesto</div>
       <div onclick="selectStation('Kuchajda')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Kuchajda</div>
