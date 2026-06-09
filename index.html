@@ -207,7 +207,7 @@
         </div>
         <div style="width:44px;margin-left:8px;"></div>
       </div>
-      <div class="expired-footer">Basic from Autobusová stanica</div>
+      <div class="expired-footer" id="stationText">Basic from Stn. Nové Mesto</div>
     </div>
   </div>
 
@@ -266,7 +266,7 @@
     <div class="nav-icon"><img src="data:image/png;base64,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" width="28" height="28" style="object-fit:contain;"/></div>
     <span class="nav-label">Search</span>
   </div>
-  <div class="nav-item">
+  <div class="nav-item" onclick="openStationPicker()">
     <div class="nav-icon"><img src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABOAE4DASIAAhEBAxEB/8QAGgABAAMBAQEAAAAAAAAAAAAAAAYICQcBBP/EADoQAAAEAwMGDAQHAAAAAAAAAAABAgMEBQYHCBEhOFR1lbMJEhQXGDE2N1WT0dMTQXaxFSIjMjNRYf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwC5Y8UpKEmpSiSkixMzPAiHogl4XuJrrUEZuVAOVWl3j5lSt4uW2cQ0mlr0mciIOHioxxxRu4v8XFSDIySkkktOQyP9p5cuSxHLoLS4fzCGU9kdltWWpTGOgKTZhHX4FlLzxRD5NESTPAsDPryjo/RDtk0KTbRT6ANEeXQWlw/mEHLoLS4fzCGd3RDtk0KTbRT6B0Q7ZNCk20U+gDRHl0FpcP5hD1MZCKUSUxTBqM8CInCxMZ29EO2TQpNtFPoIHR9OTOkbxFO01OUtImEvqWBZfJtfHSSifbPIfz6wGqoAAAIJeF7ia61BGblQnYgl4XuJrrUEZuVAKqcGx23q3VrO9F5RRrg2O29W6tZ3ovKAAAAAzgtDz5FfWMHvmho+M4LQ8+RX1jB75oBpAAAACCXhe4mutQRm5UJ2IlbNKZhPrJKsksphjiZhHSeJh4ZklEk3HFtqJKcVGRFiZl1mAqNwbHberdWs70XlGS0dTNe0bXJUc6xHymon3GWOSQ8WRLWp3im2k1Nq4p48ZPz+Y6VzJ3mvCKh2417wDR8BnBzJ3mvCKh2417wcyd5rwioduNe8A0fGcFoefIr6xg980HMnea8IqHbjXvD7LPbv9tkJajTc+ndIRnwYacwkTFxLsfDuKJCHkKUo/wBQzPAiP+zAaKAAAAAACgV4PPylmuJL9mBf0UCvB5+Us1xJfswL+gAAAAAAAAAAAAACgV4PPylmuJL9mBf0cxqqw2g6ltVgbSZkxHfjUGtlwkNvkTDq2v41LSZGZmWCeoyL8pf7j04AAAAAAAAAAB//2Q==" width="28" height="28" style="object-fit:contain;"/></div>
     <span class="nav-label">Stations</span>
   </div>
@@ -282,7 +282,7 @@
 
 <!-- TICKET SCREEN -->
 <div id="ticketScreen" style="display:none;position:fixed;inset:0;z-index:30;flex-direction:column;background:#fff;">
-  <div style="background:linear-gradient(180deg,#0885dc 0%,#0885dc 100%);padding:54px 20px 30px;text-align:center;position:relative;">
+  <div style="background:linear-gradient(180deg,#0885dc 0%,#0885dc 100%);padding:74px 20px 30px;text-align:center;position:relative;">
     <button onclick="closeTicketScreen()" style="position:absolute;left:16px;top:54px;background:none;border:none;cursor:pointer;">
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
         <circle cx="14" cy="14" r="12" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/>
@@ -297,7 +297,7 @@
     <div id="ticketCountdown" style="color:#fff;font-size:62px;font-weight:700;letter-spacing:-2px;line-height:1;margin-bottom:16px;">00:29:50</div>
     <div style="color:rgba(255,255,255,0.9);font-size:14px;margin-bottom:4px;">Basic 1x</div>
     <div style="color:rgba(255,255,255,0.9);font-size:14px;margin-bottom:4px;">2 zones / 30 minutes</div>
-    <div style="color:rgba(255,255,255,0.9);font-size:14px;margin-bottom:4px;"><strong style="color:#fff;">Boarding station:</strong> Kuchajda, 100</div>
+    <div style="color:rgba(255,255,255,0.9);font-size:14px;margin-bottom:4px;"><strong style="color:#fff;">Boarding station:</strong> <span id="boardingStation">Stn. Nové Mesto</span></div>
     <div style="color:rgba(255,255,255,0.9);font-size:14px;"><strong style="color:#fff;">Zones:</strong> 100</div>
   </div>
   <div style="background:#fff;flex:1;display:flex;flex-direction:column;align-items:center;padding:24px 20px;overflow-y:auto;padding-bottom:100px;">
@@ -440,6 +440,54 @@
     if (qr) qr.style.transform = "rotate(" + qrRotation + "deg)";
     if (qrFull) qrFull.style.transform = "rotate(" + qrRotation + "deg)";
   }, 5000);
+
+  function openStationPicker() {
+    var overlay = document.getElementById("stationOverlay");
+    var sheet = document.getElementById("stationSheet");
+    overlay.style.display = "block";
+    sheet.style.display = "block";
+    setTimeout(function() {
+      overlay.style.background = "rgba(0,0,0,0.5)";
+      sheet.style.transform = "translateY(0)";
+    }, 10);
+  }
+  function closeStationPicker() {
+    var overlay = document.getElementById("stationOverlay");
+    var sheet = document.getElementById("stationSheet");
+    overlay.style.background = "rgba(0,0,0,0)";
+    sheet.style.transform = "translateY(100%)";
+    setTimeout(function() {
+      overlay.style.display = "none";
+      sheet.style.display = "none";
+    }, 380);
+  }
+  function selectStation(name) {
+    var el = document.getElementById("stationText");
+    if (el) el.textContent = "Basic from " + name;
+    var bs = document.getElementById("boardingStation");
+    if (bs) bs.textContent = name;
+    closeStationPicker();
+  }
 </script>
+
+<!-- STATION PICKER -->
+<div id="stationOverlay" onclick="closeStationPicker()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0);transition:background 0.36s;z-index:25;"></div>
+<div id="stationSheet" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;border-radius:22px 22px 0 0;z-index:26;box-shadow:0 -4px 30px rgba(0,0,0,0.16);transform:translateY(100%);transition:transform 0.38s cubic-bezier(0.32,0.72,0,1);padding-bottom:40px;">
+  <div style="display:flex;justify-content:center;padding:12px 0 4px;"><div style="width:38px;height:4px;background:#d1d1d6;border-radius:2px;"></div></div>
+  <div style="padding:10px 24px 0;text-align:center;">
+    <div style="font-size:17px;font-weight:700;color:#111;margin-bottom:16px;">Vyber stanicu</div>
+    
+      <div onclick="selectStation('Stn. Nové Mesto')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Stn. Nové Mesto</div>
+      <div onclick="selectStation('Kuchajda')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Kuchajda</div>
+      <div onclick="selectStation('MiÚ Nové Mesto')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">MiÚ Nové Mesto</div>
+      <div onclick="selectStation('Nová doba')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Nová doba</div>
+      <div onclick="selectStation('Česká')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Česká</div>
+      <div onclick="selectStation('Trnavské mýto')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Trnavské mýto</div>
+      <div onclick="selectStation('Krížna')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Krížna</div>
+      <div onclick="selectStation('Americké nám.')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Americké nám.</div>
+      <div onclick="selectStation('Mariánska')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Mariánska</div>
+      <div onclick="selectStation('Centrum')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:none;cursor:pointer;text-align:center;">Centrum</div>
+  </div>
+</div>
 </body>
 </html>
