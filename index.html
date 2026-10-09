@@ -472,14 +472,18 @@
     closeStationPicker();
   }
 </script>
-
 <!-- STATION PICKER -->
 <div id="stationOverlay" onclick="closeStationPicker()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0);transition:background 0.36s;z-index:25;"></div>
 <div id="stationSheet" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;border-radius:22px 22px 0 0;z-index:26;box-shadow:0 -4px 30px rgba(0,0,0,0.16);transform:translateY(100%);transition:transform 0.38s cubic-bezier(0.32,0.72,0,1);height:70vh;flex-direction:column;">
   <div style="display:flex;justify-content:center;padding:12px 0 4px;flex-shrink:0;"><div style="width:38px;height:4px;background:#d1d1d6;border-radius:2px;"></div></div>
   <div style="font-size:17px;font-weight:700;color:#111;margin-bottom:8px;text-align:center;flex-shrink:0;padding:0 24px;">Vyber stanicu</div>
   <div style="flex:1;overflow-y:scroll;-webkit-overflow-scrolling:touch;padding:0 24px 40px;">
-    
+      <div onclick="selectStation('Zlaté piesky')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Zlaté piesky</div>
+      <div onclick="selectStation('Shopping Palace')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Shopping Palace</div>
+      <div onclick="selectStation('Vajnorská')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Vajnorská</div>
+      <div onclick="selectStation('Jurajov dvor')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Jurajov dvor</div>
+      <div onclick="selectStation('Magnetová')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Magnetová</div>
+      <div onclick="selectStation('Odborárska')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Odborárska</div>
       <div onclick="selectStation('Stn. Nové Mesto')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Stn. Nové Mesto</div>
       <div onclick="selectStation('Kuchajda')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Kuchajda</div>
       <div onclick="selectStation('MiÚ Nové Mesto')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">MiÚ Nové Mesto</div>
@@ -490,10 +494,30 @@
       <div onclick="selectStation('Americké nám.')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Americké nám.</div>
       <div onclick="selectStation('Mariánska')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Mariánska</div>
       <div onclick="selectStation('Centrum')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Centrum</div>
-      <div onclick="selectStation('')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;"> </div>
-      <div onclick="selectStation('')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;"> </div>
-      <div onclick="selectStation('')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:none;cursor:pointer;text-align:center;"> </div>
+      <div onclick="selectStation('Jesenského')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Jesenského</div>
+      <div onclick="selectStation('Nám. Ľ. Štúra')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Nám. Ľ. Štúra</div>
+      <div onclick="selectStation('Most SNP')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Most SNP</div>
+      <div onclick="selectStation('Vodná veža')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Vodná veža</div>
+      <div onclick="selectStation('Chatam Sófer')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Chatam Sófer</div>
+      <div onclick="selectStation('Kráľovské údolie')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Kráľovské údolie</div>
+      <div onclick="selectStation('Lanfranconi')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Lanfranconi</div>
+      <div onclick="selectStation('Botanická záhrada')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Botanická záhrada</div>
+      <div onclick="selectStation('Riviéra')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Riviéra</div>
+      <div onclick="selectStation('Segnerova')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Segnerova</div>
+      <div onclick="selectStation('Nad lúčkami')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Nad lúčkami</div>
+      <div onclick="selectStation('Nám. sv. Františka')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Nám. sv. Františka</div>
+      <div onclick="selectStation('Borská')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Borská</div>
+      <div onclick="selectStation('Kútiky')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Kútiky</div>
+      <div onclick="selectStation('Dolné Krčace')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Dolné Krčace</div>
+      <div onclick="selectStation('Horné Krčace')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Horné Krčace</div>
+      <div onclick="selectStation('Záluhy')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Záluhy</div>
+      <div onclick="selectStation('Švantnerova')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Švantnerova</div>
+      <div onclick="selectStation('Alexyho')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Alexyho</div>
+      <div onclick="selectStation('Drobného')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Drobného</div>
+      <div onclick="selectStation('Podvornice')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:1px solid #f0f0f0;cursor:pointer;text-align:center;">Podvornice</div>
+      <div onclick="selectStation('Pri kríži')" style="padding:16px 0;font-size:16px;color:#111;border-bottom:none;cursor:pointer;text-align:center;">Pri kríži</div>
   </div>
 </div>
+
 </body>
 </html>
