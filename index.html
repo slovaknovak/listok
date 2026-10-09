@@ -384,7 +384,7 @@
       document.getElementById("sheet").classList.add("visible");
     }, 10);
     clearInterval(timer);
-    timer = setInterval(rotateQR, 5000);
+    timer = setInterval(rotateQR, 3000);
   }
 
   function closeSheet() {
@@ -439,7 +439,7 @@
     var qrFull = document.getElementById("qrFullImg");
     if (qr) qr.style.transform = "rotate(" + qrRotation + "deg)";
     if (qrFull) qrFull.style.transform = "rotate(" + qrRotation + "deg)";
-  }, 4000);
+  }, 3000);
 
   function openStationPicker() {
     var overlay = document.getElementById("stationOverlay");
